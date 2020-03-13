@@ -1,0 +1,29 @@
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image src="../assets/img/{{item}}.jpg"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 标题 -->
+<view>
+  <view class="title">
+    <view>豆瓣电影</view>
+    <view>
+      <text>源码出品</text>
+      <text>必属精品</text>
+    </view>
+  </view>
+</view>
+<!-- 内容 -->
+<view class="content" wx:for='{{list}}' wx:key="index">
+  <navigator url="/pages/lists/lists?path={{item.path}}" hover-class="navigator-hover">
+    <view>
+      <text>{{item.name}}</text>
+      <text>></text>
+    </view>
+  </navigator>
+</view>

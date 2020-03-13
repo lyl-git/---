@@ -1,0 +1,18 @@
+<view class="container">
+  <!-- //海报和标题 -->
+  <view class="title">
+    <view><image src="{{obj.images.small}}"></image> </view>
+    <view style="font-weight:700;text-align:center">{{obj.aka[0]}}</view>
+  </view>
+  <!-- 评分导演 -->
+  <view class="rate">
+    <view>评分:{{obj.rating.average}}</view>
+    <view>导演:{{obj.directors[0].name}}</view>
+    <view>主演:<text style="margin-right:5px" wx:for='{{obj.writers}}' wx:key="index">{{item.name}}</text></view>
+  </view>
+  <!-- 简介 -->
+  <view class="synopsis">
+    <view sytle="font-size:20px;font-weight:700">简介:</view>
+    <view style="color:#A99F99;">{{obj.summary}}</view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+.lists{
+  margin: 20px 10px 0;
+}
+.lists .title{
+  color: #ccc;
+}
+.lists .content{
+  display: flex;
+  justify-content: space-between;
+}
+.lists .content .flex-sb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.lists .content>view>view>image{
+  width: 80px;
+  height: 100px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.lists .content .rate{
+  padding-top: 30px;
+  color:#CF8D7B;
+  font-size: 20px;
+}
+.lists .content .fontW{
+  font-weight: 700;
+  font-size: 20px;
+}
+.lists .content .font12{
+  color:#ccc;
+  font-size: 12px;
+}

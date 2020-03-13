@@ -1,0 +1,22 @@
+<view class="lists">
+  <!-- //标题 -->
+  <view class="title">{{title}}</view>
+  <!-- 内容 -->
+  <navigator url="/pages/movie/movie?id={{item.id}}" wx:for='{{subjects}}' wx:key='index'>
+    <view class="content">
+      <view class="flex-sb">
+        <!-- 左侧图片-弹性 -->
+        <view>
+          <image src="{{item.images.small}}"></image>
+        </view>
+        <!-- 右侧内容--弹性 -->
+        <view>
+          <view class="fontW">{{item.title}}</view>
+          <view class="font12">{{item.original_title}}</view>
+          <view class="colorccc">导演:{{item.directors[0].name}}</view>
+        </view>
+      </view>
+      <view class="rate">{{item.rating.average}}</view>
+    </view>
+  </navigator>
+</view>

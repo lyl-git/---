@@ -1,0 +1,12 @@
+.container{
+  margin: 0 20px;
+  padding: 0;
+}
+/* .title{
+  text-align: center;
+} */
+.rate{
+  /* text-align: left; */
+  color: #A99F99;
+  margin: 30px 0;
+}
